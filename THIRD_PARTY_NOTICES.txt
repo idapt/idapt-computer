@@ -1,0 +1,29 @@
+THIRD-PARTY SOFTWARE NOTICES
+============================
+
+The idapt computer daemon is statically linked with the following Go modules.
+Each is distributed under its own license (all permissive). Full license text
+for every module is available in its upstream repository and in the local Go
+module cache (`go mod download`; see `go.mod` for exact versions).
+
+Module                                              License
+--------------------------------------------------  --------------
+github.com/bnema/wayland-virtual-input-go           MIT
+github.com/cespare/xxhash/v2                         MIT
+github.com/coder/websocket                           ISC
+github.com/hanwen/go-fuse/v2                          BSD-3-Clause
+github.com/hashicorp/yamux                            MPL-2.0
+github.com/jezek/xgb                                  BSD-3-Clause
+github.com/klauspost/compress                         Apache-2.0
+github.com/klauspost/compress/internal/snapref        BSD-3-Clause
+github.com/klauspost/compress/zstd/internal/xxhash    MIT
+github.com/mattn/go-isatty                            MIT
+github.com/neurlang/wayland                           MIT
+github.com/redis/go-redis/v9                          BSD-2-Clause
+github.com/spf13/cobra                                Apache-2.0
+github.com/spf13/pflag                                BSD-3-Clause
+github.com/yalue/native_endian                        MIT
+go.uber.org/atomic                                    MIT
+golang.org/x/sys/unix                                 BSD-3-Clause
+golang.org/x/term                                     BSD-3-Clause
+gopkg.in/yaml.v3                                       MIT / Apache-2.0
