@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <title>__APP_NAME__</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1 id="title">__APP_ICON__ __APP_NAME__</h1>
+      <p id="status">Connecting…</p>
+      <section class="card">
+        <label for="note">Your note</label>
+        <textarea id="note" placeholder="Type something — it is saved to your private app data."></textarea>
+        <button id="save" type="button">Save</button>
+        <p id="saved" class="muted"></p>
+      </section>
+    </main>
+    <!-- npm-only: no IIFE SDK. app.js talks to the per-app data KV directly via
+         the app-key cookie. A buildable app instead bundles
+         @idapt/browser-app-sdk (see the npm scaffolds). -->
+    <script src="app.js"></script>
+  </body>
+</html>
